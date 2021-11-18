@@ -33,3 +33,20 @@ document.querySelector('#burgir').addEventListener('click', function() {
         document.querySelector('body').classList.add('hidden');
     };
 });
+
+$(window).scroll(function(){
+    if ( $(this).scrollTop() > 100) {
+        $('.besamogas').css({bottom : '20px'});
+    } else {
+        $('.besamogas').css({bottom : '-100%'});
+    }
+});
+$('.besamogas').on('click', function(){
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
+});
+
+document.querySelector('.footer__phone').addEventListener('click', function() {
+    this.classList.add('active');
+});
