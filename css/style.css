@@ -37,7 +37,7 @@ ul, ol {
   margin: 0; }
 
 .container {
-  max-width: 1180px;
+  max-width: 1108px;
   width: 100%;
   margin: 0 auto;
   padding: 0 !important; }
@@ -365,7 +365,7 @@ section {
 
 .benefits__item {
   width: 255px;
-  margin-right: 30px;
+  margin-right: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1324,7 +1324,20 @@ section {
     top: 0;
     left: 0;
     z-index: 1; }
-  .footer__phone.active::after {
+  .footer__phone::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 16px;
+    left: 145px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-top: 0;
+    border-right: 0; }
+  .footer__phone.active::after, .footer__phone.active::before {
     display: none; }
   .footer__phone.active a:last-child {
     display: block; } }
